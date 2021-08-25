@@ -29,11 +29,11 @@ If you think your solution is fine run the **check.bat** file it will open a **r
 
 
 ## ANSWERS TO THE QUESTIONS
-#1.# We need a sales report from our Shopify site that should give a breakdown of product sell-through rates on a daily basis, while a product is in inventory. This report is not available directly through the Shopify admin/report tool. What would be the best method of collecting the required data so that it could be aggregated weekly into the required report?
+1. We need a sales report from our Shopify site that should give a breakdown of product sell-through rates on a daily basis, while a product is in inventory. This report is not available directly through the Shopify admin/report tool. What would be the best method of collecting the required data so that it could be aggregated weekly into the required report?
 
-#A:# If the option of getting the required information is not available via a custom report in the report tools, i would explore the possibility of getting the data from the database itself. For this, i would define proper API REST requests in order to get the updated info every time needed.
+A: If the option of getting the required information is not available via a custom report in the report tools, i would explore the possibility of getting the data from the database itself. For this, i would define proper API REST requests in order to get the updated info every time needed.
 
-#2.# You are looking through a Shopify liquid template and come across the following piece of JavaScript code. What does it do?
+2. You are looking through a Shopify liquid template and come across the following piece of JavaScript code. What does it do?
 
 <script>
 if(ShopifyAnalytics.meta.page.customerId === undefined){
@@ -41,9 +41,9 @@ window.location.href = "https://store.chronicinkattoo.com";
 }
 </script>
 
-#A:# If the user is no logged in the store, it sets the current page to be the home root of the store. My best guess is that this is used to perform a url redirect after.
+A: If the user is no logged in the store, it sets the current page to be the home root of the store. My best guess is that this is used to perform a url redirect after.
 
-#3.# When working with Shopify data - externally - are you better to use a SQL or NoSQL style database and why?
+3. When working with Shopify data - externally - are you better to use a SQL or NoSQL style database and why?
 
-#A:# Shopify data, as almost every e-commerce solution, is a well structured set of information, with persistent relations across the entire application, that makes it more useful to handle with a SQL database. IFF the amount of information being handled excedes the order of petabytes, i would not consider the use of a NoSQL environment.
+A: Shopify data, as almost every e-commerce solution, is a well structured set of information, with persistent relations across the entire application, that makes it more useful to handle with a SQL database. IFF the amount of information being handled excedes the order of petabytes, i would not consider the use of a NoSQL environment.
 
